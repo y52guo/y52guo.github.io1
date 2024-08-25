@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website For Roger </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21e9643539.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contract</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Data analyser</p>
+            <h1>Hi, I'm <span>Roger</span> <br>GUO from Canada</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/self.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Roger Guo, and I am currently a student at the University of Waterloo. 
+                    I recently completed my first year of studies with a GPA of 4.0, which reflects my dedication and passion for learning.
+
+I have a strong interest in data analysis, and I have honed my skills in SQL, which allows me to efficiently manage and analyze large datasets. 
+In addition to my expertise in SQL, I have also learned Python and C, two powerful programming languages that I use for various projects and problem-solving tasks.
+            </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data analysis</span><br>By using Excel to finish pivot table</li>
+                        <li><span>Data analysis</span><br>By using R to finish data graph</li>
+                        <li><span>Data analysis</span><br>By using SQL grab the data needed.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>2021</span><br>Exercising program in pivot table making. (Excel)</li>
+                        <li><span>2023</span><br>Cost of living, bussiness cycle, growth and inequality between 4 countries. (R) </li>
+                        <li><span>2024</span><br>Grabbing data form Amazon's public data base to do data separation. (SQL)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 Sep</span><br>First year A in University of Waterloo of Honor Math with GPA 3.9 average and 4.0 in math</li>
+                        <li><span>2024 Jan</span><br>First year B in University of Waterloo with GPA 4.0 in both average and subject.</li>
+                        <li><span>2024 May</span><br>Second year A in University of Waterloo transferring into Honor Math with coop by high GPA</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+<!---------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data analyser assitance</h2>
+                <p>abbc</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer-mouse"></i>
+                <h2>Programming tester</h2>
+                <p>abbc</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------portfolio--------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/graph-database-market-size.png">
+                <div class="layer">
+                    <h3>Data analysing graph in R studio</h3>
+                    <p>abbcsjhf;kjhakf</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Is-Python-good-for-software-development.png">
+                <div class="layer">
+                    <h3>Python testing program of bank app</h3>
+                    <p>abbcsjhf;kjhakf</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!-- ----------contract------------->
+<div id="contract">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1><div class="sub-title">Contact Me</div></h1>
+                <p><i class="fa-regular fa-paper-plane"></i> y52guo@uwaterloo.ca</p>
+                <p><i class="fa-solid fa-phone"></i> +1 4378189423</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/yuejia-guo-064604308"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="images/Personal CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Roger. Made with <i class="fa-solid fa-heart"></i> self tutorial</p>
+    </div>
+</div>  
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby1bsokpl1YJtSjVZ8c0R1ud-siHInlUXf6NlgY9a8uQ139R8KM7NApwecpn11qJjw9/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
